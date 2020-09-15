@@ -35,5 +35,10 @@ namespace Cal.Controllers
             })
             .ToArray();
         }
+        [HttpPost("Pow")]
+        public double power(double num1, double num2)
+        {
+            return Math.Pow(num1, num2);
+        }
     }
 }
