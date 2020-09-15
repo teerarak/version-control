@@ -28,5 +28,11 @@ namespace Cal.Controllers
         {
             return Math.Pow(num1, num2);
         }
+
+        [HttpPost("minus")]
+        public int minus(int firstNumber, int secondNumber)
+        {
+            return firstNumber - secondNumber;
+        }
     }
 }
