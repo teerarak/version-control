@@ -35,5 +35,11 @@ namespace Cal.Controllers
             })
             .ToArray();
         }
+
+        [HttpPost("division")]
+        public int division(int firstNumber, int secondNumber)
+        {
+            return firstNumber / secondNumber;
+        }
     }
 }
