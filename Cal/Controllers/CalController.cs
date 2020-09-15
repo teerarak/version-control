@@ -28,5 +28,10 @@ namespace Cal.Controllers
         {
             return Math.Pow(num1, num2);
         }
+        [HttpPost("plus")]
+        public int plus(int numberFirst, int numberSecond)
+        {
+            return numberFirst + numberSecond;
+        }
     }
 }
