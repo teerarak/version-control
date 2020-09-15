@@ -35,5 +35,11 @@ namespace Cal.Controllers
             })
             .ToArray();
         }
+
+        [HttpPost("minus")]
+        public int minus(int firstNumber, int secondNumber)
+        {
+            return firstNumber - secondNumber;
+        }
     }
 }
