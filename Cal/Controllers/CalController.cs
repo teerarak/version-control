@@ -35,5 +35,10 @@ namespace Cal.Controllers
             })
             .ToArray();
         }
+        [HttpPost("plus")]
+        public int plus(int numberFirst, int numberSecond)
+        {
+            return numberFirst + numberSecond;
+        }
     }
 }
