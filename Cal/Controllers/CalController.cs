@@ -35,5 +35,11 @@ namespace Cal.Controllers
             })
             .ToArray();
         }
+
+        [HttpPost("multiply")]
+        public int multiply(int firstNumber, int secondNumber)
+        {
+            return firstNumber * secondNumber;
+        }
     }
 }
